@@ -147,6 +147,20 @@
         let entryTabsBeingShown = [];
         let statsTabsBeingShown = [];
 
+        let showExpandedGameListForStats = true;
+        let showExpandedGameListForEntries = true;
+
+        function ToggleExpandedGamesListForStats() {
+            showExpandedGameListForStats = !showExpandedGameListForStats;
+            UpdateStatsTabCSS();
+        }
+
+        function ToggleExpandedGamesListForEntries() {
+            showExpandedGameListForEntries = !showExpandedGameListForEntries;
+            showEntryTabs();
+        }
+
+
         //#region JSON I/O
         function UpdateJsonInputFieldAndResubmit() {
             document.getElementById("JsonInputField").value = JSON.stringify(games, null, 2);
@@ -167,7 +181,7 @@
                     games = data;
                     UpdateJsonInputFieldAndResubmit();
                 });
-    }
+        }
 
         function Submit() {
             const raw = document.getElementById("JsonInputField").value;
@@ -451,6 +465,8 @@
             const tabs = document.getElementById("entryTabs");
             tabs.innerHTML = "";
 
+            MakeExpandGameListToggle(tabs, "expandGameListEntries", () => ToggleExpandedGamesListForEntries());
+
             CreateTabButton("All Games", () => toggleEntryTabs("All Games"), "EntryTabButton", tabs);
 
             for (const game in games) {
@@ -538,20 +554,42 @@
             showEntryTabs();
         }
 
+        function MakeExpandGameListToggle(tabs, id, callback) {
+            const expandToggle = document.createElement("button");
+            expandToggle.name = id;
+            expandToggle.id = id;
+            expandToggle.onclick = function () {
+                callback();
+            };
+
+            // Add to DOM
+            tabs.appendChild(expandToggle);
+
+        }
+
         function showEntryTabs() {
             for (const gameID in games) {
+                document.getElementById("expandGameListEntries").innerText = showExpandedGameListForEntries ? "Show all" : "Show selected";
+
                 if (entryTabsBeingShown.length == 0 || arrayContains(gameID, entryTabsBeingShown)) {
 
                     // Show selected tab and mark button active
                     document.getElementById(`EntryTabButton${gameID}`).classList.add('tab-btn-active');
                     document.getElementById(`EntryTabButton${gameID}`).classList.remove('tab-btn');
                     document.getElementById(`Entry${gameID}Content`).style.display = "block";
+                    if (entryTabsBeingShown.length == 0) {
+                        document.getElementById(`EntryTabButton${gameID}`).style.display = showExpandedGameListForEntries ? "" : "none";
+                    }
+                    else
+                    {
+                        document.getElementById(`StatsTabButton${gameID}`).style.display = "";
+                    }
                 }
                 else {
                     document.getElementById(`Entry${gameID}Content`).style.display = "none";
                     document.getElementById(`EntryTabButton${gameID}`).classList.remove('tab-btn-active');
                     document.getElementById(`EntryTabButton${gameID}`).classList.add('tab-btn');
-
+                    document.getElementById(`EntryTabButton${gameID}`).style.display = showExpandedGameListForEntries ? "" : "none";
                 }
             }
         }
@@ -787,6 +825,7 @@
             //game tab creation
             const tabs = document.getElementById("statsTabs");
             tabs.innerHTML = "";
+            MakeExpandGameListToggle(tabs, "expandGameListStats", () => ToggleExpandedGamesListForStats());
 
             CreateTabButton("All Games", () => toggleStatsTabs("All Games"), "StatsTabButton", tabs);
 
@@ -960,14 +999,25 @@
         function UpdateStatsTabCSS() {
 
 
+            document.getElementById("expandGameListStats").innerText = showExpandedGameListForStats ? "Show all" : "Show selected";
+
             for (const gameID in games) {
                 if (statsTabsBeingShown.length == 0 || arrayContains(gameID, statsTabsBeingShown)) {
 
                     // Show selected tab and mark button active
                     document.getElementById(`StatsTabButton${gameID}`).classList.remove('tab-btn');
                     document.getElementById(`StatsTabButton${gameID}`).classList.add('tab-btn-active');
+
+                    if (statsTabsBeingShown.length == 0) {
+                        document.getElementById(`StatsTabButton${gameID}`).style.display = showExpandedGameListForStats ? "" : "none";
+                        console.log(showExpandedGameListForStats);
+                    }
+                    else{
+                        document.getElementById(`StatsTabButton${gameID}`).style.display = "";
+                    }
                 }
                 else {
+                    document.getElementById(`StatsTabButton${gameID}`).style.display = showExpandedGameListForStats ? "" : "none";
                     document.getElementById(`StatsTabButton${gameID}`).classList.remove('tab-btn-active');
                     document.getElementById(`StatsTabButton${gameID}`).classList.add('tab-btn');
                 }
