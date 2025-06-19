@@ -164,8 +164,8 @@
                 })
                 .then(data => {
                     console.log("Loaded default data:", data);
-                    document.getElementById("JsonInputField").value = data;
-                    Submit();
+                    game = data;
+                    UpdateJsonInputFieldAndResubmit();
                 });
     }
 
