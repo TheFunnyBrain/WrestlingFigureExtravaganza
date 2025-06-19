@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Wrestling Figure Extravaganza!</title>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -15,8 +15,9 @@
             <h2>Json input/output</h2>
             <textarea id="JsonInputField"></textarea>
             <div style="display:inline-block">
-                <button onclick="Submit()">Submit</button><button onclick="downloadJSON()">Download JSON</button><button
-                    onclick="FixUIDs()">Fix UIDs</button>
+                <button onclick="Submit()">Submit</button><button onclick="downloadJSON()">Download JSON</button>
+                <button onclick="FixUIDs()">Fix UIDs</button>
+                <button onclick="SubmitAdamsData()">Use Adam's data</button>
             </div>
             <div class="hideUntilData big" style="overflow: auto;">
                 <h2>Add New Wrestler</h2>
@@ -151,6 +152,22 @@
             document.getElementById("JsonInputField").value = JSON.stringify(games, null, 2);
             Submit();
         }
+
+        function SubmitAdamsData() {
+
+            fetch('wrestling_roster.json')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! Status: ${response.status}`);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log("Loaded default data:", data);
+                    document.getElementById("JsonInputField").value = data;
+                    Submit();
+                }
+    }
 
         function Submit() {
             const raw = document.getElementById("JsonInputField").value;
@@ -675,8 +692,7 @@
             let count = 0;
 
             for (const gameID in games) {
-                if(gameID == "Misc/Non-Game" && !entryTabsBeingShown.includes("Misc/Non-Game"))
-                {
+                if (gameID == "Misc/Non-Game" && !entryTabsBeingShown.includes("Misc/Non-Game")) {
                     continue;
                 }
                 let roster = games[gameID]["Roster"];
@@ -885,12 +901,10 @@
                 }
             });
 
-            if(counter > 0)
-            {
+            if (counter > 0) {
                 biggestScoreDiv.parentElement.querySelector("h3").innerText = `Here's ${counter} to watch for!`;
             }
-            else
-            {
+            else {
                 biggestScoreDiv.parentElement.querySelector("h3").innerText = `No missing wrestlers to show!`;
             }
             UpdateStatsTabCSS(); //apply highlight effect if being displayed
