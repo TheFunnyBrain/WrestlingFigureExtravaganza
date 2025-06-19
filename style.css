@@ -1,0 +1,124 @@
+        body {
+            font-family: Arial, Arial, Helvetica, sans-serif;
+            background-color: #121212;
+            color: #f0f0f0;
+            margin: auto;
+        }
+
+        .main {
+            display: inline-flex;
+            flex-direction: row;
+            flex-grow: 4;
+            margin: 5px;
+        }
+
+        h2 {
+            border-bottom: 2px groove #444;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+
+        .entry {
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        a {
+            color: #ffffff;
+        }
+
+        .entry span {
+            display: block;
+        }
+
+        textarea {
+            width: 100%;
+            height: 200px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #8a0102;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #d60106;
+        }
+
+        .column {
+
+            display: flex;
+            flex-direction: column;
+            max-height: calc(100vh - 30px);
+            margin: 10px;
+            flex-grow: 0;
+            /* full viewport height */
+        }
+
+        .big {
+            /* full viewport height */
+            flex-grow: 4 !important;
+        }
+
+        .output {
+            overflow-y: scroll;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .tab-buttons {
+            margin-bottom: 1em;
+        }
+
+        .tab-btn {
+            background: #222;
+            padding: 5px 10px;
+            border-bottom: 0px;
+            margin-right: 5px;
+            border-bottom-left-radius: 0px !important;
+            border-bottom-right-radius: 0px !important;
+            font-size: small;
+        }
+
+        .tab-btn-active {
+            padding: 5px 10px;
+            border-bottom-left-radius: 0px !important;
+            border-bottom-right-radius: 0px !important;
+            margin-right: 5px;
+            font-size: small;
+        }
+
+        .tab-content {
+            display: none;
+            padding: 20px;
+            border: 1px solid #333;
+            background-color: #1e1e1e;
+        }
+
+        .tab-content.active-tab {
+            display: block;
+        }
+
+        .inlineForm {
+            display: inline;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .entry.unsaved {
+            border: 2px solid orange;
+            background-color: #3f3e3e;
+        }
+
+        .hideUntilData {
+            display: none;
+        }
