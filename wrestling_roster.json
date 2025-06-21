@@ -4323,7 +4323,7 @@
         "Notes": "",
         "Status": false,
         "Legend": false,
-        "In The Post": false,
+        "In The Post": true,
         "Figure Details": "",
         "Personal Ranking": "9"
       },
