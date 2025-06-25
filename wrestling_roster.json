@@ -1118,7 +1118,7 @@
         "Notes": "",
         "Status": false,
         "Legend": false,
-        "In The Post": false,
+        "In The Post": true,
         "Figure Details": "",
         "Personal Ranking": "19"
       },
@@ -1398,9 +1398,9 @@
         "Notes": "",
         "Status": false,
         "Legend": false,
-        "In The Post": false,
+        "In The Post": true,
         "Figure Details": "Short hair",
-        "Personal Ranking": false
+        "Personal Ranking": ""
       },
       {
         "UID": "5",
@@ -2263,7 +2263,7 @@
         "Notes": "",
         "Status": false,
         "Legend": false,
-        "In The Post": false,
+        "In The Post": true,
         "Figure Details": "",
         "Personal Ranking": "19"
       },
@@ -2672,7 +2672,7 @@
         "Notes": "",
         "Status": false,
         "Legend": false,
-        "In The Post": false,
+        "In The Post": true,
         "Figure Details": "",
         "Personal Ranking": "19"
       },
@@ -2715,7 +2715,11 @@
         "UID": "2",
         "Display Name": "Big Show",
         "Notes": "Short hair",
-        "Status": false
+        "Status": false,
+        "Legend": false,
+        "In The Post": true,
+        "Figure Details": "",
+        "Personal Ranking": ""
       },
       {
         "UID": "22",
@@ -3227,9 +3231,9 @@
         "Notes": "",
         "Status": false,
         "Legend": false,
-        "In The Post": false,
+        "In The Post": true,
         "Figure Details": "",
-        "Personal Ranking": false
+        "Personal Ranking": ""
       },
       {
         "UID": "22",
@@ -3672,9 +3676,9 @@
         "Notes": "Short hair",
         "Status": false,
         "Legend": false,
-        "In The Post": false,
+        "In The Post": true,
         "Figure Details": "",
-        "Personal Ranking": false
+        "Personal Ranking": ""
       },
       {
         "UID": "68",
@@ -4097,7 +4101,11 @@
         "UID": "2",
         "Display Name": "Big Show",
         "Notes": "Short hair",
-        "Status": false
+        "Status": false,
+        "Legend": false,
+        "In The Post": true,
+        "Figure Details": "",
+        "Personal Ranking": ""
       },
       {
         "UID": "22",
@@ -4476,9 +4484,9 @@
         "Notes": "Short hair",
         "Status": false,
         "Legend": false,
-        "In The Post": false,
+        "In The Post": true,
         "Figure Details": "",
-        "Personal Ranking": false
+        "Personal Ranking": ""
       },
       {
         "UID": "22",
@@ -4791,9 +4799,9 @@
         "Notes": "",
         "Status": false,
         "Legend": false,
-        "In The Post": false,
+        "In The Post": true,
         "Figure Details": "Short hair",
-        "Personal Ranking": false
+        "Personal Ranking": ""
       },
       {
         "UID": "68",
@@ -5236,9 +5244,9 @@
         "Notes": "Short hair",
         "Status": false,
         "Legend": false,
-        "In The Post": false,
+        "In The Post": true,
         "Figure Details": "",
-        "Personal Ranking": false
+        "Personal Ranking": ""
       },
       {
         "UID": "22",
@@ -5837,7 +5845,7 @@
         "Notes": "Short hair",
         "Status": false,
         "Legend": false,
-        "In The Post": false,
+        "In The Post": true,
         "Figure Details": "",
         "Personal Ranking": ""
       },
@@ -6306,9 +6314,9 @@
         "Notes": "Short hair",
         "Status": false,
         "Legend": false,
-        "In The Post": false,
+        "In The Post": true,
         "Figure Details": "",
-        "Personal Ranking": false
+        "Personal Ranking": ""
       },
       {
         "UID": "68",
@@ -7082,9 +7090,9 @@
         "Notes": "Hair :/ Wut no",
         "Status": false,
         "Legend": false,
-        "In The Post": false,
+        "In The Post": true,
         "Figure Details": "",
-        "Personal Ranking": false
+        "Personal Ranking": ""
       },
       {
         "UID": "68",
@@ -9177,7 +9185,7 @@
         "Notes": "Love Machine",
         "Status": false,
         "Legend": false,
-        "In The Post": false,
+        "In The Post": true,
         "Figure Details": "",
         "Personal Ranking": "19"
       },
