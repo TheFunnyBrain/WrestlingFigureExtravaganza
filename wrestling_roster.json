@@ -1783,7 +1783,7 @@
         "Notes": "Mullet",
         "Status": false,
         "Legend": false,
-        "In The Post": false,
+        "In The Post": true,
         "Figure Details": "",
         "Personal Ranking": "27"
       },
@@ -2402,7 +2402,11 @@
         "UID": "40",
         "Display Name": "Eddie Guerrero",
         "Notes": "Mullet",
-        "Status": true
+        "Status": false,
+        "Legend": false,
+        "In The Post": true,
+        "Figure Details": "",
+        "Personal Ranking": ""
       },
       {
         "UID": "41",
@@ -2773,7 +2777,11 @@
         "UID": "40",
         "Display Name": "Eddie Guerrero",
         "Notes": "",
-        "Status": true
+        "Status": false,
+        "Legend": false,
+        "In The Post": true,
+        "Figure Details": "",
+        "Personal Ranking": ""
       },
       {
         "UID": "11",
@@ -3036,7 +3044,7 @@
         "Notes": "",
         "Status": false,
         "Legend": false,
-        "In The Post": false,
+        "In The Post": true,
         "Figure Details": "",
         "Personal Ranking": "27"
       },
@@ -3321,7 +3329,7 @@
         "Notes": "Mullet",
         "Status": false,
         "Legend": false,
-        "In The Post": false,
+        "In The Post": true,
         "Figure Details": "",
         "Personal Ranking": "27"
       },
@@ -4117,7 +4125,7 @@
         "UID": "67",
         "Display Name": "Billy Kidman",
         "Notes": "Early",
-        "Status": false,
+        "Status": true,
         "Legend": false,
         "In The Post": false,
         "Figure Details": "",
@@ -4193,7 +4201,7 @@
         "Notes": "Mullet",
         "Status": false,
         "Legend": false,
-        "In The Post": false,
+        "In The Post": true,
         "Figure Details": "",
         "Personal Ranking": "27"
       },
@@ -5262,7 +5270,7 @@
         "UID": "67",
         "Display Name": "Billy Kidman",
         "Notes": "",
-        "Status": false,
+        "Status": true,
         "Legend": false,
         "In The Post": false,
         "Figure Details": "Early",
@@ -5632,11 +5640,11 @@
         "UID": "159",
         "Display Name": "Shannon Moore",
         "Notes": "Long hair?",
-        "Status": false,
+        "Status": true,
         "Legend": false,
         "In The Post": false,
         "Figure Details": "Mohawk likely to be the only one around",
-        "Personal Ranking": false
+        "Personal Ranking": ""
       },
       {
         "UID": "53",
@@ -5742,7 +5750,7 @@
         "UID": "113",
         "Display Name": "Tommy Dreamer",
         "Notes": "",
-        "Status": false,
+        "Status": true,
         "Legend": false,
         "In The Post": false,
         "Figure Details": "",
@@ -6453,10 +6461,10 @@
         "Display Name": "Greg Valentine",
         "Notes": "",
         "Status": false,
-        "Legend": false,
+        "Legend": true,
         "In The Post": false,
         "Figure Details": "",
-        "Personal Ranking": false
+        "Personal Ranking": ""
       },
       {
         "UID": "15",
