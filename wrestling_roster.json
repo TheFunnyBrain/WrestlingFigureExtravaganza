@@ -2135,7 +2135,7 @@
         "Legend": false,
         "In The Post": false,
         "Figure Details": "",
-        "Personal Ranking": false
+        "Personal Ranking": ""
       },
       {
         "UID": "57",
@@ -5702,7 +5702,7 @@
         "Notes": "Steven Richards",
         "Status": false,
         "Legend": false,
-        "In The Post": false,
+        "In The Post": true,
         "Figure Details": "Midcard hell after RTC",
         "Personal Ranking": "23"
       },
@@ -6173,7 +6173,7 @@
         "Notes": "",
         "Status": false,
         "Legend": false,
-        "In The Post": false,
+        "In The Post": true,
         "Figure Details": "",
         "Personal Ranking": "23"
       },
@@ -8428,7 +8428,7 @@
         "Notes": "",
         "Status": false,
         "Legend": false,
-        "In The Post": false,
+        "In The Post": true,
         "Figure Details": "",
         "Personal Ranking": "23"
       },
