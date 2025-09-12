@@ -2135,7 +2135,7 @@
         "Legend": false,
         "In The Post": false,
         "Figure Details": "",
-        "Personal Ranking": ""
+        "Personal Ranking": false
       },
       {
         "UID": "57",
@@ -5700,9 +5700,9 @@
         "UID": "55",
         "Display Name": "Stevie Richards",
         "Notes": "Steven Richards",
-        "Status": false,
+        "Status": true,
         "Legend": false,
-        "In The Post": true,
+        "In The Post": false,
         "Figure Details": "Midcard hell after RTC",
         "Personal Ranking": "23"
       },
@@ -5991,7 +5991,7 @@
         "Notes": "",
         "Status": false,
         "Legend": true,
-        "In The Post": false,
+        "In The Post": true,
         "Figure Details": "",
         "Personal Ranking": ""
       },
@@ -6171,9 +6171,9 @@
         "UID": "55",
         "Display Name": "Steven Richards",
         "Notes": "",
-        "Status": false,
+        "Status": true,
         "Legend": false,
-        "In The Post": true,
+        "In The Post": false,
         "Figure Details": "",
         "Personal Ranking": "23"
       },
@@ -8426,9 +8426,9 @@
         "UID": "55",
         "Display Name": "Steven Richards",
         "Notes": "",
-        "Status": false,
+        "Status": true,
         "Legend": false,
-        "In The Post": true,
+        "In The Post": false,
         "Figure Details": "",
         "Personal Ranking": "23"
       },
