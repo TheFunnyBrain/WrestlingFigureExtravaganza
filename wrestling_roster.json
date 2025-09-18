@@ -5362,9 +5362,9 @@
         "Notes": "Solo",
         "Status": false,
         "Legend": false,
-        "In The Post": false,
+        "In The Post": true,
         "Figure Details": "",
-        "Personal Ranking": false
+        "Personal Ranking": ""
       },
       {
         "UID": "38",
@@ -5470,7 +5470,7 @@
         "UID": "114",
         "Display Name": "Jamie Noble",
         "Notes": "",
-        "Status": false,
+        "Status": true,
         "Legend": false,
         "In The Post": false,
         "Figure Details": "",
@@ -5989,9 +5989,9 @@
         "UID": "93",
         "Display Name": "Iron Sheik",
         "Notes": "",
-        "Status": false,
+        "Status": true,
         "Legend": true,
-        "In The Post": true,
+        "In The Post": false,
         "Figure Details": "",
         "Personal Ranking": ""
       },
@@ -6350,11 +6350,11 @@
         "UID": "108",
         "Display Name": "Brutus Beefcake",
         "Notes": "",
-        "Status": false,
+        "Status": true,
         "Legend": true,
         "In The Post": false,
         "Figure Details": "",
-        "Personal Ranking": false
+        "Personal Ranking": ""
       },
       {
         "UID": "86",
@@ -6763,7 +6763,7 @@
         "UID": "108",
         "Display Name": "Brutus Beefcake",
         "Notes": "",
-        "Status": false,
+        "Status": true,
         "Legend": true,
         "In The Post": false,
         "Figure Details": "",
@@ -7056,6 +7056,16 @@
         "In The Post": false,
         "Figure Details": "",
         "Personal Ranking": "16"
+      },
+      {
+        "UID": "70",
+        "Display Name": "Chuck Palumbo",
+        "Notes": "",
+        "Status": false,
+        "Legend": false,
+        "In The Post": true,
+        "Figure Details": "",
+        "Personal Ranking": ""
       }
     ]
   },
