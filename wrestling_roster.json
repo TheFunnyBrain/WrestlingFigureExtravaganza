@@ -463,9 +463,9 @@
         "Notes": "",
         "Status": false,
         "Legend": false,
-        "In The Post": false,
+        "In The Post": true,
         "Figure Details": "",
-        "Personal Ranking": false
+        "Personal Ranking": ""
       },
       {
         "UID": "101",
@@ -5197,7 +5197,7 @@
         "Notes": "",
         "Status": false,
         "Legend": false,
-        "In The Post": false,
+        "In The Post": true,
         "Figure Details": "",
         "Personal Ranking": "16"
       },
@@ -5812,7 +5812,7 @@
         "Notes": "",
         "Status": false,
         "Legend": false,
-        "In The Post": false,
+        "In The Post": true,
         "Figure Details": "",
         "Personal Ranking": "16"
       },
@@ -5885,7 +5885,7 @@
         "Notes": "WGTT",
         "Status": false,
         "Legend": false,
-        "In The Post": false,
+        "In The Post": true,
         "Figure Details": "",
         "Personal Ranking": "13"
       },
@@ -6117,7 +6117,11 @@
         "UID": "99",
         "Display Name": "Sable",
         "Notes": "",
-        "Status": false
+        "Status": false,
+        "Legend": false,
+        "In The Post": true,
+        "Figure Details": "",
+        "Personal Ranking": ""
       },
       {
         "UID": "100",
@@ -6257,7 +6261,7 @@
         "Notes": "",
         "Status": false,
         "Legend": false,
-        "In The Post": false,
+        "In The Post": true,
         "Figure Details": "",
         "Personal Ranking": "4"
       },
@@ -6279,7 +6283,7 @@
         "Notes": "",
         "Status": false,
         "Legend": false,
-        "In The Post": false,
+        "In The Post": true,
         "Figure Details": "",
         "Personal Ranking": "16"
       },
@@ -6696,7 +6700,7 @@
         "Notes": "",
         "Status": false,
         "Legend": false,
-        "In The Post": false,
+        "In The Post": true,
         "Figure Details": "",
         "Personal Ranking": "16"
       }
@@ -6967,7 +6971,11 @@
         "UID": "99",
         "Display Name": "Sable",
         "Notes": "",
-        "Status": false
+        "Status": false,
+        "Legend": false,
+        "In The Post": true,
+        "Figure Details": "",
+        "Personal Ranking": ""
       },
       {
         "UID": "52",
@@ -7057,7 +7065,7 @@
         "Notes": "",
         "Status": false,
         "Legend": false,
-        "In The Post": false,
+        "In The Post": true,
         "Figure Details": "",
         "Personal Ranking": "16"
       },
