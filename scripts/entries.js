@@ -1,6 +1,19 @@
 let showExpandedGameListForEntries = true;
 let entryTabsBeingShown = [];
 
+const adamGames =
+    [
+        "Smackdown 1",
+        "Royal Rumble (2000)",
+        "Smackdown 2",
+        "Just Bring It",
+        "Road to Wrestlemania",
+        "Wrestlemania X8",
+        "Shut Your Mouth",
+        "Crush Hour",
+        "Here Comes the Pain"
+    ]
+
 
 function OnEntriesFilterChange() {
     renderEntries();
@@ -11,21 +24,23 @@ function SearchForUID(uid) {
     OnEntriesFilterChange();
 }
 
-function toggleEntryTabs(tabId) {
-    if (tabId != "All Games") {
+function setEntryTabs(tabIds){
+    entryTabsBeingShown = tabIds.slice();
+    showEntryTabs();
+}
 
+function toggleEntryTabs(tabIds) {
+
+    tabIds.forEach(tabId =>
+    {
         if (arrayContains(tabId, entryTabsBeingShown)) {
             entryTabsBeingShown = entryTabsBeingShown.filter(function (a) { return a !== tabId })
         }
         else {
             entryTabsBeingShown.push(tabId);
         }
+    });
 
-    }
-    else {
-
-        entryTabsBeingShown = []
-    }
     showEntryTabs();
 
 }
@@ -180,13 +195,15 @@ function renderEntries() {
 
     MakeExpandGameListToggle(tabs, "expandGameListEntries", () => ToggleExpandedGamesListForEntries());
 
-    CreateTabButton("All Games", () => toggleEntryTabs("All Games"), "EntryTabButton", tabs);
+    CreateTabButton("All Games", () => setEntryTabs([]), "EntryTabButton", tabs);
+
+    CreateTabButton("Adam's Filter", () => setEntryTabs(adamGames), "EntryTabButton", tabs)
 
     for (const game in games) {
         const roster = games[game]["Roster"];
         const section = document.createElement("div");
 
-        CreateTabButton(game, () => toggleEntryTabs(game), "EntryTabButton", tabs);
+        CreateTabButton(game, () => toggleEntryTabs([game]), "EntryTabButton", tabs);
 
 
         //Header

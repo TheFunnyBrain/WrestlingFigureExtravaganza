@@ -19,14 +19,16 @@ function renderStats() {
     tabs.innerHTML = "";
     MakeExpandGameListToggle(tabs, "expandGameListStats", () => ToggleExpandedGamesListForStats());
 
-    CreateTabButton("All Games", () => toggleStatsTabs("All Games"), "StatsTabButton", tabs);
+    CreateTabButton("All Games", () => setStatsTabs([]), "StatsTabButton", tabs);
+
+    CreateTabButton("Adam's Filter", () => setStatsTabs(adamGames), "StatsTabButton", tabs);
 
     const wrestlerScores = {}; // uid -> { missing, total, name, missingName } //sometimes a specific gimmick name is missing - e.g. gregory helms, not the hurricane
     const gameAverages = {}
 
     for (const game in games) {
         //Tab HTML
-        CreateTabButton(game, () => toggleStatsTabs(game), "StatsTabButton", tabs);
+        CreateTabButton(game, () => toggleStatsTabs([game]), "StatsTabButton", tabs);
 
         if (game != "Misc/Non-Game") {
             //Do we care about this game
@@ -185,22 +187,19 @@ function OnStatsFilterChange() {
     renderStats();
 }
 
+function setStatsTabs(tabIds){
+    statsTabsBeingShown = tabIds.slice();
+    OnStatsFilterChange();
+}
 
-
-function toggleStatsTabs(tabId) {
-    if (tabId != "All Games") {
-
-        if (arrayContains(tabId, statsTabsBeingShown)) {
-            statsTabsBeingShown = statsTabsBeingShown.filter(function (a) { return a !== tabId })
-        }
-        else {
-            statsTabsBeingShown.push(tabId);
-        }
-
+function toggleStatsTabs(tabIds) {
+    tabIds.forEach(tabId => {
+    if (arrayContains(tabId, statsTabsBeingShown)) {
+        statsTabsBeingShown = statsTabsBeingShown.filter(function (a) { return a !== tabId })
     }
     else {
+        statsTabsBeingShown.push(tabId);
+    }});
 
-        statsTabsBeingShown = []
-    }
     OnStatsFilterChange();
 }

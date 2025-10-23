@@ -63,7 +63,6 @@ function MakeExpandGameListToggle(tabs, id, callback) {
 
     // Add to DOM
     tabs.appendChild(expandToggle);
-
 }
 
 function getPercentageColor(percentage) {
@@ -129,6 +128,7 @@ function CreateTabButton(game, onclick, idPrefix, tabs) {
     tabButton.id = `${idPrefix}${game}`;
     tabButton.addEventListener('click', onclick);
     tabs.appendChild(tabButton);
+    return tabButton;
 }
 
 //#endregion
